@@ -1,0 +1,55 @@
+{
+	"name": "spa-webpack-workflow",
+	"version": "0.0.1",
+	"description": "A workflow for SPA made with Webpack",
+	"scripts": {
+		"build": "export NODE_ENV=prod && rimraf public && webpack --env prod --bail --progress --profile",
+		"server": "webpack-dev-server --env dev --history-api-fallback --inline --progress",
+		"start": "export NODE_ENV=dev && npm run server"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"author": "Piotr Potera",
+	"license": "UNLICENSED",
+	"bugs": {
+		"url": ""
+	},
+	"homepage": "",
+	"dependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.4.2",
+    "babel-preset-stage-2": "6.3.13",
+    "copy-webpack-plugin": "^1.1.1",
+    "css-loader": "^0.23.0",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.4",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.7.1",
+    "imports-loader": "^0.6.5",
+    "jquery": "1.12.1",
+    "lodash": "^4.5.0",
+    "node-libs-browser": "^1.0.0",
+    "node-sass": "^3.4.2",
+    "normalize.css": "^3.0.3",
+    "null-loader": "^0.1.1",
+    "oclazyload": "^1.0.9",
+    "postcss-loader": "^0.8.0",
+    "prettify": "^0.1.7",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.1",
+    "sass-loader": "^3.1.2",
+    "script-loader": "^0.6.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.13"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.4.0",
+    "webpack-dev-server": "^1.12.13"
+  }
+}
