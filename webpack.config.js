@@ -1,13 +1,13 @@
 'use strict';
 
-const autoprefixer 		= require('autoprefixer');
-const path				 		= require('path');
+const autoprefixer	 	= require('autoprefixer');
+const path		 		    = require('path');
 const tools    				= require('./webpack/webpack.tools');
 
 function webpackConfig (ENV) {
-	let config = {}
+  let config = {}
 
-	config.entry     = tools.setEntry(ENV, './app/app.js');
+  config.entry     = tools.setEntry(ENV, './app/app.js');
   config.output    = tools.setOutput(ENV, __dirname + '/dist');
   config.devtool   = tools.setDevtool(ENV);
   config.devServer = tools.setDevServer();
